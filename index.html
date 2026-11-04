@@ -468,14 +468,15 @@ button{ cursor: pointer; background: none; border: none; padding: 0; }
 .hero-section{
   position: relative;
   width: 100%;
-  height: 60vh;
-  min-height: 320px;
-  max-height: 600px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--color-dark);
 }
-@media (min-width: 768px){ .hero-section{ height: 70vh; min-height: 400px; } }
-@media (min-width: 1024px){ .hero-section{ height: 85vh; min-height: 600px; max-height: 800px; } }
+@media (min-width: 1024px){
+  .hero-section{
+    max-height: 800px;
+  }
+}
 
 .hero-slide{
   position: absolute;
@@ -490,6 +491,8 @@ button{ cursor: pointer; background: none; border: none; padding: 0; }
   height: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: auto;
   transform: scale(1);
   animation: heroKenburns 9s ease-in-out infinite alternate;
   will-change: transform;
@@ -960,7 +963,7 @@ body.dark-mode .review-dot.is-active { background: #3B6EFF; }
   border-top: 1px solid var(--color-border);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .pro-portfolio-card__link-btn {
   font-size: 13.5px;
@@ -1688,7 +1691,6 @@ body.dark-mode .footer__logo { content: url('https://i.postimg.cc/J4G8NrmK/slazz
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 </div>
                 <p class="review-card__text">"Managing 20,000+ catalog items used to be an overwhelming task. BetaTechX automated our internal link equity and missing tags effortlessly."</p>
               </div>
@@ -1726,7 +1728,6 @@ body.dark-mode .footer__logo { content: url('https://i.postimg.cc/J4G8NrmK/slazz
             <div class="review-card">
               <div>
                 <div class="review-card__stars">
-                  <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
